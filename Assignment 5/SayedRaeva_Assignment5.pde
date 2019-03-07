@@ -38,7 +38,9 @@ void draw () {
   
 }
 
+//function to draw cats
 void drawMultipleCats(float x, float y, float s, float angle) {
+//translate cats to random size, angle, position
   pushMatrix();
   translate(x,y);
   rotate(angle);
@@ -68,7 +70,7 @@ void drawMultipleCats(float x, float y, float s, float angle) {
   
 
 }
-
+//function to move the cats
 void moveCats() {
   posx += speedx;
   posy += speedy;
