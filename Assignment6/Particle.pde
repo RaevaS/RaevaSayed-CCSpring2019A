@@ -6,7 +6,8 @@ class Particle {
   
   public float sqlength = random(10, 50); //width and height of the sq
   public float life = 255; //particle gets more transparent as it dies
-  
+  public color [] colorList = {color(56,27,227), color(255,240,75), color(252,168,251)};
+  public color randomColor = colorList[(int)random(colorList.length)]; 
   
   //constructors
   
@@ -32,7 +33,7 @@ class Particle {
   
   //how to draw the particle
   void show(){
-    fill(56,27,227, life);
+    fill(randomColor, life);
     square(loc.x, loc.y, sqlength);
   }
   
