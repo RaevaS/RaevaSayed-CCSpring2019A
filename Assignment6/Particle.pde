@@ -8,8 +8,8 @@ class Particle {
   public float life = 255; //particle gets more transparent as it dies
   public color [] colorList = {color(56,27,227), color(255,240,75), color(252,168,251)};
   public color randomColor = colorList[(int)random(colorList.length)]; 
-  
   //constructors
+  
   //blank constructor
   public Particle(){
     
@@ -22,6 +22,7 @@ class Particle {
   }
   
   //methods
+  
   //how to move the particle
   void move(){
     vel.add(accel);
