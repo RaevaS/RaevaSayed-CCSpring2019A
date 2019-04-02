@@ -10,7 +10,6 @@ class Particle {
   public color randomColor = colorList[(int)random(colorList.length)]; 
   
   //constructors
-  
   //blank constructor
   public Particle(){
     
@@ -23,7 +22,6 @@ class Particle {
   }
   
   //methods
-  
   //how to move the particle
   void move(){
     vel.add(accel);

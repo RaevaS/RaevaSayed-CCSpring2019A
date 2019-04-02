@@ -5,7 +5,6 @@ class ParticleSystem{
   ParticleV place = new ParticleV(0, 0); //location of particles
   
   //constructor
-  
   //blank constructor
   public ParticleSystem(){
   }
@@ -23,7 +22,6 @@ class ParticleSystem{
   }
   
   //methods
-  
   //add particles into system
   public void addParticle(){
     particles.add(new Particle(place));

@@ -1,29 +1,34 @@
 
 class Cat {
   
+  //fields
+  public float catlife = 255;
+  
   //constructors
   //blank constructor
   public Cat() {
   }
-  public float catlife = 255;
+  
   //methods
   //function to draw cat
   public void drawCat() {
-  
+  //if the key is pressed make the value of catlife decrease so it disappears 
   if (keyPressed == true) {
     catlife -= 5.5;
+    //otherwise remain visible
   }else{
     catlife = 255;
   }
     
-  
-  ellipseMode(CENTER);
+  //drawing the actual cat here
+  //draw the cat wherever mapped mouseX and Y are so wherever the mouse is
   float posx = map(mouseX+350,0, width, 0, height);
   float posy = map(mouseY+350,0, width, 0, height);
   //begin drawing
   noStroke();
   //face
-fill(56,27,227, catlife);
+  ellipseMode(CENTER);
+  fill(56,27,227, catlife);
   ellipse(posx, posy, 200, 200);
   //ears
   triangle(posx-25,posy-90,posx-100,posy-120,posx-75,posy-20);
