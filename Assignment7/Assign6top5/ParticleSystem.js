@@ -37,7 +37,6 @@ class ParticleSystem{
     //loop for making multiple particles
     for(var i = 0; i < this.particles.length; i++){
       var p = this.particles[i]; 
-      console.log(p)
       p.show(); //show the particles
       p.move(); //move the particles
       

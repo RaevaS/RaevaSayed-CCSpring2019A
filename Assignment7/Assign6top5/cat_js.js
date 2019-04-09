@@ -9,7 +9,6 @@ var c1 = new Cat();
 //define particle
 var p1 = new ParticleSystem();
 var pressing = false;
-console.log(p1)
 
 function setup () {
   //create canvas
@@ -25,7 +24,6 @@ function draw() {
   if (pressing){
    p1.run();
    p1.addParticle(); 
-   console.log(p1)
   }
   else{
     c1.drawCat();
@@ -36,10 +34,10 @@ function draw() {
 //user input if key is pressed cat dissapears
 function keyPressed() {
   pressing = true;
-  //this.catlife -= 5.5;
+  
 } 
 function keyReleased () {
   pressing = false;
-  //this.catlife = 255;
+
  
 }
