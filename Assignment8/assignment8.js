@@ -13,7 +13,7 @@ function setup() {
     world = engine.world;
     ground = new Ground(width/2,height-10,width,20);
     box = new Box(450,300,50,75);
-    rock = new Rock(50, 300,25);
+    rock = new Rock(50,300,25);
 
     /*const mouse = Matter.Mouse.create(canvas.elt);
     const options = {

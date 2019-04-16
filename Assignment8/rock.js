@@ -14,6 +14,7 @@ class Rock{
         translate(pos.x,pos.y);
         rotate(angle);
         fill (0);
+        //rectMODE(CENTER);
         circle(0, 0, this.r);
         pop();
     }  
