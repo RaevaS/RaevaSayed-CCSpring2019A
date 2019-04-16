@@ -28,7 +28,9 @@ function setup() {
 function draw() {
     background(150);
     Matter.Engine.update(engine);
-    box.show();
+    for (let box of boxes){
+        box.show();
+    }
     ground.show();
     rock.show();
 }
