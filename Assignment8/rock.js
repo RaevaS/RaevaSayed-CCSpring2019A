@@ -13,8 +13,9 @@ class Rock{
         push();
         translate(pos.x,pos.y);
         rotate(angle);
-        fill (0);
-        circle(0, 0, this.r);
+        fill (80);
+        stroke(255);
+        circle(0, 0, this.r*2);
         pop();
     }  
 }
