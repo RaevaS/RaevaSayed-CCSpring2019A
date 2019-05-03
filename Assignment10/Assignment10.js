@@ -45,6 +45,7 @@ function draw(){
   }
   else {
   //index of color array for each image
+  image (img,0,0);
   tint (colors [0]);
   
   image (img, 360, 0);
