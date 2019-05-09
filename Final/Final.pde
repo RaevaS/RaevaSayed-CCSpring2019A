@@ -105,7 +105,7 @@ void draw() {
       if (b.yellow == false && obj[i].organic == false){
         score += 1;
       }
-      //reset position to top
+      //reset position - to top as soon as collides, looks like it disappears when it touches bin
       obj[i].y = height;
 
    }
