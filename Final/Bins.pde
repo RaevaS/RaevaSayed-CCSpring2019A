@@ -1,27 +1,29 @@
 
 class Bins extends Box{
-  //PIamge class to handle loading of images
+  //PImage class to handle images
   PImage redbin;
   PImage yellowbin;
   PImage bg;
   
   public boolean yellow = true;
-  public int binState = 0;
-  public int posybins = 550;
-  public int posxbins = width/2;
   
+  //bin constructor
   public Bins(int x, int y, int w, int h){
-    
+    //with collision checking - box constructor
     super(x,y,w,h);
   }
- 
+ //Draw method for bins
   public void drawBins(){
       background(bg);
+      //mapped mouse - 35 bc of image
+      x = mouseX-35;
       
+      //if bin is yellow then show yellow bin
       if (yellow) {
-        image(yellowbin,this.posxbins = mouseX-35,this.posybins);
+        image(yellowbin,x,y);
+       //otherwise show red bin 
       } else {
-        image(redbin,this.posxbins = mouseX-35,this.posybins);
+        image(redbin,x,y);
       }
       
       
@@ -29,4 +31,3 @@ class Bins extends Box{
     }
 
 }
-  

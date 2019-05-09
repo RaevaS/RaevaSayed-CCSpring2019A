@@ -2,26 +2,28 @@ class Objects extends Box {
   
   //fields
   public boolean organic = true;
-  public float objectposx = random(width);
-  public float objectposy = 0;
   public PImage img;
   public float speed = random(1,5);
   
-  public Objects(PImage img, boolean organic, float x, float y, float w, float h){
+  //constructor - img, organic, x,y,w,h
+  public Objects(PImage img, boolean organic, float x,float y, float w, float h){
+    //
     super(x,y,w,h);
     this.img = img;
     this.organic = organic;
   }
   
-  public void drawObjects() {
-   
-   objectposy += speed;
+  //method to move the objects
+  public void moveObjects() {
+   //make position increase by the speed to show falling
+   y += speed;
     
     
   }
   
+  //method to show objects  - whichever gets passed into it (fruit or plastic)
   public void showObjects () {
-     image(img,this.objectposx,this.objectposy);
+     image(img,x,y);
    
    }
    
